@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KOBBI Portfolio Admin</title>
+    <link rel="stylesheet" href="admin.css">
+  </head>
+  <body>
+    <header class="admin-header">
+      <div>
+        <p class="eyebrow">Local editor</p>
+        <h1>KOBBI Portfolio Admin</h1>
+      </div>
+      <div class="header-actions">
+        <button class="button" type="button" id="open-folder">Open data folder</button>
+        <button class="button button-secondary" type="button" id="preview-site">Preview</button>
+        <button class="button button-secondary" type="button" id="copy-deploy">Copy deploy commands</button>
+      </div>
+    </header>
+
+    <main class="admin-shell">
+      <aside class="sidebar" aria-label="Portfolio sections">
+        <nav class="section-tabs" id="section-tabs"></nav>
+        <div class="item-tools">
+          <button class="button button-secondary" type="button" id="new-item">New item</button>
+          <button class="button button-danger" type="button" id="delete-item">Delete</button>
+        </div>
+        <div class="item-list" id="item-list"></div>
+      </aside>
+
+      <section class="editor-panel" aria-live="polite">
+        <div class="status" id="status">Open the data folder to begin editing.</div>
+        <form class="editor-form" id="editor-form"></form>
+        <div class="form-actions">
+          <button class="button button-secondary" type="button" id="move-up">Move up</button>
+          <button class="button button-secondary" type="button" id="move-down">Move down</button>
+          <button class="button" type="button" id="save">Save changes</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="admin.js" type="module"></script>
+  </body>
+</html>

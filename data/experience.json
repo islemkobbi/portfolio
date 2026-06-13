@@ -1,0 +1,41 @@
+{
+  "entries": [
+    {
+      "range": "Oct 2023 - Present",
+      "role": "Doctorant",
+      "organization": "INRIA, Paris",
+      "description": "Researching self-play reinforcement learning for mid-to-mid motion planning in autonomous driving. Current work covers closed-map training, Hermite-spline trajectory actions, CARLA evaluation, PufferDrive experiments, and Waymo-style realism metrics.",
+      "tags": [
+        "Self-Play RL",
+        "Autonomous Driving",
+        "CARLA",
+        "PufferDrive",
+        "Motion Planning"
+      ]
+    },
+    {
+      "range": "Feb 2024 - Aug 2024",
+      "role": "R&D Deep Learning Intern",
+      "organization": "Astek, Paris",
+      "description": "Developed multimodal deep learning systems for traffic sign reconstruction, detection, and recognition in autonomous-driving perception pipelines.",
+      "tags": [
+        "Deep Learning",
+        "Computer Vision",
+        "PyTorch",
+        "OpenCV"
+      ]
+    },
+    {
+      "range": "2021 - 2023",
+      "role": "AI and Robotics Research Projects",
+      "organization": "Academic and applied labs",
+      "description": "Built machine learning, robotics, and simulation projects spanning perception, planning, and intelligent systems.",
+      "tags": [
+        "Robotics",
+        "Simulation",
+        "Python",
+        "ROS"
+      ]
+    }
+  ]
+}

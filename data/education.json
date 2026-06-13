@@ -1,0 +1,26 @@
+{
+  "entries": [
+    {
+      "range": "2023 - Present",
+      "degree": "PhD in Autonomous Driving and Reinforcement Learning",
+      "school": "INRIA Paris - ASTRA Team",
+      "description": "Doctoral research on reinforcement learning, motion planning, and scalable self-play for autonomous vehicles.",
+      "tags": [
+        "PhD",
+        "Reinforcement Learning",
+        "Autonomous Driving"
+      ]
+    },
+    {
+      "range": "Before 2023",
+      "degree": "Graduate Studies in AI, Robotics, and Computer Science",
+      "school": "Engineering and research training",
+      "description": "Foundation in machine learning, computer vision, software engineering, and robotic systems.",
+      "tags": [
+        "AI",
+        "Robotics",
+        "Computer Science"
+      ]
+    }
+  ]
+}
