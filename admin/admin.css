@@ -108,6 +108,68 @@ h1 {
   min-height: calc(100svh - 78px);
 }
 
+body:not(.is-authenticated) .admin-shell,
+body:not(.is-authenticated) .admin-header {
+  display: none;
+}
+
+body.is-authenticated .login-shell {
+  display: none;
+}
+
+.login-shell {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: radial-gradient(circle at 20% 0%, rgba(0, 212, 255, 0.11), transparent 28%), var(--bg);
+}
+
+.login-panel {
+  width: min(440px, 100%);
+  padding: 32px;
+  border: 1px solid rgba(112, 132, 255, 0.18);
+  border-radius: 18px;
+  background: rgba(11, 12, 29, 0.95);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.2);
+}
+
+.login-panel h2 {
+  margin: 0 0 18px;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+}
+
+.login-panel label {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.login-panel input {
+  min-height: 48px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+}
+
+.login-panel button {
+  width: 100%;
+}
+
+.login-message {
+  margin-top: 14px;
+  color: var(--muted);
+  min-height: 1.2em;
+}
+
+.login-message.is-error {
+  color: #ff8b7f;
+}
+
 .sidebar {
   border-right: 1px solid var(--border);
   background: rgba(11, 12, 29, 0.74);

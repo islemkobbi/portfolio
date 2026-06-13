@@ -7,6 +7,9 @@ const SECTIONS = {
   skills: { label: "Skills", file: "skills.json", type: "skills" }
 };
 
+const ADMIN_PASSWORD = "admin2026";
+const AUTH_STORAGE_KEY = "portfolio-admin-authenticated";
+
 const state = {
   current: "profile",
   selectedIndex: 0,
@@ -27,12 +30,19 @@ const ui = {
   moveDown: document.getElementById("move-down"),
   save: document.getElementById("save"),
   form: document.getElementById("editor-form"),
-  status: document.getElementById("status")
+  status: document.getElementById("status"),
+  loginShell: document.getElementById("login-shell"),
+  passwordInput: document.getElementById("password-input"),
+  loginButton: document.getElementById("login-button"),
+  loginMessage: document.getElementById("login-message")
 };
+
+let isAuthenticated = false;
 
 init();
 
 function init() {
+  hydrateAuthState();
   renderTabs();
   render();
 
@@ -44,6 +54,10 @@ function init() {
   ui.moveUp.addEventListener("click", () => moveItem(-1));
   ui.moveDown.addEventListener("click", () => moveItem(1));
   ui.save.addEventListener("click", saveCurrentFile);
+  ui.loginButton.addEventListener("click", attemptLogin);
+  ui.passwordInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") attemptLogin();
+  });
 }
 
 function renderTabs() {
@@ -87,6 +101,33 @@ async function resolveDataDirectory(handle) {
   } catch {
     return handle.getDirectoryHandle("data");
   }
+}
+
+function hydrateAuthState() {
+  isAuthenticated = localStorage.getItem(AUTH_STORAGE_KEY) === "true";
+  updateAuthUI();
+}
+
+function attemptLogin() {
+  const password = ui.passwordInput.value;
+  if (password === ADMIN_PASSWORD) {
+    isAuthenticated = true;
+    localStorage.setItem(AUTH_STORAGE_KEY, "true");
+    ui.passwordInput.value = "";
+    ui.loginMessage.textContent = "";
+    updateAuthUI();
+    setStatus("Signed in. Open the data folder to begin editing.");
+    return;
+  }
+
+  ui.loginMessage.textContent = "Incorrect password. Try again.";
+  ui.loginMessage.classList.add("is-error");
+}
+
+function updateAuthUI() {
+  document.body.classList.toggle("is-authenticated", isAuthenticated);
+  ui.loginMessage.textContent = "";
+  ui.loginMessage.classList.toggle("is-error", false);
 }
 
 async function loadAllFiles() {
