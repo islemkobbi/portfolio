@@ -1,0 +1,57 @@
+{
+  "papers": [
+    {
+      "id": "selfplan-2025",
+      "title": "SelfPlan: Learning Mid-to-Mid Motion Planning through Closed-Map Self-Play",
+      "authors": [
+        "Islem Kobbi",
+        "Tiago Rocha Goncalves",
+        "Fawzi Nashashibi"
+      ],
+      "venue": "Preprint | 2026",
+      "tags": [
+        "Reinforcement Learning",
+        "Autonomous Driving",
+        "Motion Planning",
+        "Closed-Map Self-Play",
+        "CARLA",
+        "Waymo OSA"
+      ],
+      "abstract": "SelfPlan is a closed-map scalable self-play framework for learning mid-to-mid motion planners. The policy outputs short-horizon trajectories tracked by a low-level controller, using structured ego-frame observations and rewards for path quality, efficiency, safety, and goal reaching. Evaluation spans CARLA closed maps, Waymo validation maps, and Waymo Open Sim Agents realism metrics.",
+      "links": {
+        "pdf": "assets/docs/selfplan-closed-map-self-play.pdf",
+        "hal": "https://hal.science/hal-05294346",
+        "arxiv": ""
+      },
+      "keyResult": "97% success | 2% collision | 1% off-road on CARLA",
+      "bibtex": "@misc{kobbi2026selfplan,\n  title={SelfPlan: Learning Mid-to-Mid Motion Planning through Closed-Map Self-Play},\n  author={Kobbi, Islem and Rocha Goncalves, Tiago and Nashashibi, Fawzi},\n  year={2026}\n}"
+    },
+    {
+      "id": "urban-self-play-2026",
+      "title": "Motion Planning in Urban Environments via Self-Play Reinforcement Learning",
+      "authors": [
+        "Islem Kobbi",
+        "Tiago Rocha Goncalves",
+        "Fawzi Nashashibi"
+      ],
+      "venue": "ITSC 2026 Manuscript",
+      "tags": [
+        "Self-Play RL",
+        "Mid-to-Mid Planning",
+        "PufferDrive",
+        "PPO",
+        "Transformer",
+        "LSTM"
+      ],
+      "abstract": "This work studies self-play reinforcement learning for mid-to-mid motion planning in urban autonomous driving. The planner maps structured observations to continuous trajectories parameterized by cubic Hermite splines, preserving a modular perception-planning-control pipeline. Training is performed in the GPU-accelerated PufferDrive simulator, where all agents share and continuously update one policy to generate progressively harder interactions without manual scenario design.",
+      "links": {
+        "pdf": "assets/docs/motion-planning-self-play-itsc26.pdf",
+        "preprint": "assets/docs/motion-planning-self-play-preprint.pdf",
+        "hal": "",
+        "arxiv": ""
+      },
+      "keyResult": "92.2% task completion | 6.9% collision | 340k steps/s",
+      "bibtex": "@misc{kobbi2026urbanmotionplanning,\n  title={Motion Planning in Urban Environments via Self-Play Reinforcement Learning},\n  author={Kobbi, Islem and Rocha Goncalves, Tiago and Nashashibi, Fawzi},\n  year={2026}\n}"
+    }
+  ]
+}

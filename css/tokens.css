@@ -1,0 +1,59 @@
+:root {
+  color-scheme: dark;
+  --bg-void: #04040f;
+  --bg-surface: #080818;
+  --bg-elevated: #101125;
+  --bg-glass: rgba(8, 8, 28, 0.72);
+  --border-dim: rgba(100, 120, 255, 0.14);
+  --border-active: rgba(80, 200, 255, 0.44);
+  --node-rest: rgba(60, 120, 220, 0.35);
+  --node-active: rgba(80, 220, 255, 1);
+  --edge-rest: rgba(60, 100, 200, 0.08);
+  --edge-active: rgba(80, 220, 255, 0.6);
+  --accent-primary: #00d4ff;
+  --accent-secondary: #7b5ea7;
+  --accent-warm: #ff6b35;
+  --accent-green: #8fd694;
+  --text-primary: #e8eaf6;
+  --text-secondary: #a5aec8;
+  --text-muted: #8892b0;
+  --text-dim: #56617a;
+  --shadow-cyan: 0 0 32px rgba(0, 212, 255, 0.18);
+  --shadow-warm: 0 0 30px rgba(255, 107, 53, 0.24);
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  --t-xs: 0.72rem;
+  --t-sm: 0.875rem;
+  --t-base: 1rem;
+  --t-lg: 1.2rem;
+  --t-xl: 1.5rem;
+  --t-2xl: clamp(1.8rem, 4vw, 2.5rem);
+  --t-3xl: clamp(3.1rem, 9vw, 4.5rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-pulse: cubic-bezier(0.4, 0, 0.2, 1);
+  --header-height: 76px;
+  --container: 1120px;
+  --section-pad: clamp(84px, 11vw, 140px);
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--bg-void);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--t-base);
+  line-height: 1.65;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(0, 212, 255, 0.28);
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 4px;
+}

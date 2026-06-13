@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page not found - Islem KOBBI</title>
+    <meta name="theme-color" content="#04040f">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/components.css">
+    <style>
+      body {
+        display: grid;
+        min-height: 100svh;
+        place-items: center;
+        padding: 24px;
+        background:
+          radial-gradient(circle at 50% 20%, rgba(0, 212, 255, 0.14), transparent 32%),
+          var(--bg-void);
+      }
+
+      .not-found {
+        display: grid;
+        max-width: 640px;
+        gap: 20px;
+        text-align: center;
+      }
+
+      .not-found h1 {
+        color: var(--text-primary);
+        font-family: var(--font-display);
+        font-size: clamp(3rem, 12vw, 7rem);
+        line-height: 1;
+      }
+
+      .not-found p {
+        color: var(--text-secondary);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="not-found">
+      <h1>404</h1>
+      <p>This page drifted outside the network. The portfolio is still one hop away.</p>
+      <p><a class="button" href="index.html">Return home</a></p>
+    </main>
+  </body>
+</html>

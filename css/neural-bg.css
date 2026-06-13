@@ -1,0 +1,28 @@
+.neural-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-void);
+  pointer-events: none;
+}
+
+.ambient-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(0, 212, 255, 0.12), transparent 32%),
+    linear-gradient(180deg, rgba(4, 4, 15, 0.1) 0%, rgba(4, 4, 15, 0.75) 58%, var(--bg-void) 100%);
+}
+
+.section-fade {
+  position: absolute;
+  inset-inline: 0;
+  bottom: -1px;
+  height: 180px;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(4, 4, 15, 0), var(--bg-void));
+}
