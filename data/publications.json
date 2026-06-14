@@ -52,6 +52,60 @@
       },
       "keyResult": "92.2% task completion on WAMO validation set with 340k steps/s",
       "bibtex": "@misc{kobbi2026urbanmotionplanning,\n  title={Motion Planning in Urban Environments via Self-Play Reinforcement Learning},\n  author={Kobbi, Islem and Rocha Goncalves, Tiago and Nashashibi, Fawzi},\n  year={2026}\n}"
+    },
+    {
+      "id": "rl-mid-to-mid-motion-planning-2025",
+      "title": "Reinforcement Learning for Mid-to-Mid Motion Planning in Autonomous Driving",
+      "authors": [
+        "Islem Kobbi",
+        "Hussam Atoui",
+        "Fawzi Nashashibi"
+      ],
+      "venue": "ITSC 2025 | HAL",
+      "tags": [
+        "Reinforcement Learning",
+        "Motion Planning",
+        "Autonomous Driving",
+        "PPO",
+        "Behavior Cloning",
+        "Imitation Learning"
+      ],
+      "abstract": "This paper studies reinforcement learning for mid-to-mid motion planning in autonomous driving, combining policy optimization with imitation-learning ideas to train motion-planning behavior for autonomous vehicles.",
+      "links": {
+        "pdf": "assets/docs/reinforcement-learning-mid-to-mid-motion-planning-itsc25.pdf",
+        "preprint": "",
+        "hal": "https://hal.science/hal-05294346v1",
+        "arxiv": ""
+      },
+      "keyResult": "HAL record for ITSC 2025 final version",
+      "bibtex": "@inproceedings{kobbi2025rlmidtomid,\n  title={Reinforcement Learning for Mid-to-Mid Motion Planning in Autonomous Driving},\n  author={Kobbi, Islem and Atoui, Hussam and Nashashibi, Fawzi},\n  year={2025}\n}"
+    },
+    {
+      "id": "pose-estimation-drl-ekf-2024",
+      "title": "Enhancing Pose Estimation for Mobile Robots: A Comparative Analysis of Deep Reinforcement Learning Algorithms for Adaptive Extended Kalman Filter-based Estimation",
+      "authors": [
+        "Islem Kobbi",
+        "Abdelhak Benamirouche",
+        "Mohamed Tadjine"
+      ],
+      "venue": "SSRN Preprint | 2024",
+      "tags": [
+        "Deep Reinforcement Learning",
+        "Pose Estimation",
+        "Extended Kalman Filter",
+        "Mobile Robots",
+        "ROS",
+        "Gazebo"
+      ],
+      "abstract": "This preprint compares deep reinforcement learning algorithms for adaptive EKF-based pose estimation in mobile robots. The approach lets the estimator learn and update system dynamics and measurement-noise covariance matrices from observed data in changing environments.",
+      "links": {
+        "pdf": "assets/docs/enhancing-pose-estimation-mobile-robots-drl-ekf-ssrn.pdf",
+        "preprint": "https://ssrn.com/abstract=4858659",
+        "hal": "",
+        "arxiv": ""
+      },
+      "keyResult": "DRL-enhanced adaptive EKF for mobile robot pose estimation",
+      "bibtex": "@misc{kobbi2024poseestimationdrl,\n  title={Enhancing Pose Estimation for Mobile Robots: A Comparative Analysis of Deep Reinforcement Learning Algorithms for Adaptive Extended Kalman Filter-based Estimation},\n  author={Kobbi, Islem and Benamirouche, Abdelhak and Tadjine, Mohamed},\n  year={2024}\n}"
     }
   ]
 }
