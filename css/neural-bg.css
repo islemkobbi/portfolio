@@ -13,9 +13,25 @@
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background:
-    radial-gradient(circle at 50% 18%, rgba(0, 212, 255, 0.12), transparent 32%),
-    linear-gradient(180deg, rgba(4, 4, 15, 0.1) 0%, rgba(4, 4, 15, 0.75) 58%, var(--bg-void) 100%);
+  background: var(--ambient-bg);
+  box-shadow: var(--ambient-shadow);
+  opacity: 0.88;
+}
+
+.ambient-overlay::before {
+  position: absolute;
+  inset: 0;
+  background: var(--ambient-soft-bg);
+  content: "";
+  mix-blend-mode: screen;
+  opacity: 0.48;
+}
+
+.ambient-overlay::after {
+  position: absolute;
+  inset: 0;
+  background: var(--ambient-vignette-bg);
+  content: "";
 }
 
 .section-fade {
@@ -24,5 +40,5 @@
   bottom: -1px;
   height: 180px;
   pointer-events: none;
-  background: linear-gradient(180deg, rgba(4, 4, 15, 0), var(--bg-void));
+  background: transparent;
 }

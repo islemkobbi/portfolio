@@ -10,6 +10,11 @@
   --node-active: rgba(80, 220, 255, 1);
   --edge-rest: rgba(60, 100, 200, 0.08);
   --edge-active: rgba(80, 220, 255, 0.6);
+  --neural-glow: rgba(80, 220, 255, 0.8);
+  --neural-halo-core: rgba(0, 212, 255, 0.035);
+  --neural-halo-mid: rgba(123, 94, 167, 0.018);
+  --neural-halo-edge: rgba(4, 4, 15, 0);
+  --neural-signal: rgba(143, 214, 148, 0.75);
   --accent-primary: #00d4ff;
   --accent-secondary: #7b5ea7;
   --accent-warm: #ff6b35;
@@ -20,6 +25,46 @@
   --text-dim: #56617a;
   --shadow-cyan: 0 0 32px rgba(0, 212, 255, 0.18);
   --shadow-warm: 0 0 30px rgba(255, 107, 53, 0.24);
+  --selection-bg: rgba(0, 212, 255, 0.28);
+  --selection-text: #ffffff;
+  --control-bg: rgba(8, 8, 24, 0.82);
+  --control-hover-bg: rgba(0, 212, 255, 0.1);
+  --button-bg: rgba(0, 212, 255, 0.08);
+  --button-hover-bg: rgba(0, 212, 255, 0.14);
+  --button-hover-border: rgba(80, 220, 255, 0.86);
+  --button-warm-bg: rgba(255, 107, 53, 0.14);
+  --button-warm-hover-bg: rgba(255, 107, 53, 0.22);
+  --button-warm-border: rgba(255, 107, 53, 0.64);
+  --ghost-bg: rgba(255, 255, 255, 0.03);
+  --brand-mark-bg: rgba(0, 212, 255, 0.08);
+  --profile-border: rgba(0, 212, 255, 0.55);
+  --profile-shadow: 0 0 40px rgba(0, 212, 255, 0.22);
+  --panel-bg: rgba(8, 8, 24, 0.72);
+  --contact-panel-bg: linear-gradient(135deg, rgba(8, 8, 24, 0.78), rgba(16, 17, 37, 0.62));
+  --card-bg: linear-gradient(145deg, rgba(8, 8, 24, 0.88), rgba(16, 17, 37, 0.74));
+  --card-shadow: 0 18px 48px rgba(0, 0, 0, 0.22);
+  --card-hover-shadow: 0 24px 70px rgba(0, 212, 255, 0.12);
+  --paper-venue-bg: rgba(0, 212, 255, 0.08);
+  --result-bg: rgba(255, 107, 53, 0.1);
+  --result-border: rgba(255, 107, 53, 0.28);
+  --result-text: #ffcfbd;
+  --tag-bg: rgba(123, 94, 167, 0.16);
+  --tag-border: rgba(123, 94, 167, 0.36);
+  --tag-text: #d8c8ff;
+  --timeline-line: rgba(0, 212, 255, 0.22);
+  --timeline-dot-shadow: 0 0 0 6px rgba(0, 212, 255, 0.06);
+  --dot-pulse-start: rgba(0, 212, 255, 0.42);
+  --dot-pulse-end: rgba(0, 212, 255, 0);
+  --skill-track-bg: rgba(255, 255, 255, 0.08);
+  --contact-chip-bg: rgba(255, 255, 255, 0.035);
+  --contact-chip-hover-bg: rgba(0, 212, 255, 0.08);
+  --toast-bg: rgba(8, 8, 24, 0.92);
+  --mobile-nav-bg: radial-gradient(circle at 50% 10%, rgba(0, 212, 255, 0.13), transparent 32%), rgba(4, 4, 15, 0.96);
+  --ambient-bg: radial-gradient(ellipse at 50% 18%, rgba(0, 212, 255, 0.14), transparent 34%), radial-gradient(ellipse at 72% 72%, rgba(143, 214, 148, 0.07), transparent 32%), linear-gradient(180deg, rgba(4, 4, 15, 0.1) 0%, rgba(4, 4, 15, 0.72) 58%, var(--bg-void) 100%);
+  --ambient-soft-bg: radial-gradient(circle at 18% 22%, rgba(0, 212, 255, 0.07), transparent 28%), radial-gradient(circle at 82% 38%, rgba(255, 107, 53, 0.04), transparent 24%), radial-gradient(circle at 52% 82%, rgba(143, 214, 148, 0.04), transparent 26%);
+  --ambient-vignette-bg: linear-gradient(90deg, rgba(4, 4, 15, 0.72), transparent 16%, transparent 84%, rgba(4, 4, 15, 0.72)), linear-gradient(180deg, transparent 0%, rgba(4, 4, 15, 0.3) 48%, rgba(4, 4, 15, 0.86) 100%);
+  --ambient-shadow: inset 0 0 180px rgba(0, 0, 0, 0.58);
+  --theme-color: #04040f;
   --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
   --font-body: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
@@ -37,6 +82,75 @@
   --section-pad: clamp(84px, 11vw, 140px);
 }
 
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg-void: #f6f8fc;
+  --bg-surface: #ffffff;
+  --bg-elevated: #edf2f9;
+  --bg-glass: rgba(255, 255, 255, 0.78);
+  --border-dim: rgba(52, 78, 120, 0.16);
+  --border-active: rgba(0, 124, 168, 0.38);
+  --node-rest: rgba(34, 96, 178, 0.32);
+  --node-active: rgba(0, 124, 168, 0.95);
+  --edge-rest: rgba(34, 96, 178, 0.1);
+  --edge-active: rgba(0, 124, 168, 0.46);
+  --neural-glow: rgba(0, 124, 168, 0.42);
+  --neural-halo-core: rgba(0, 124, 168, 0.08);
+  --neural-halo-mid: rgba(123, 94, 167, 0.035);
+  --neural-halo-edge: rgba(246, 248, 252, 0);
+  --neural-signal: rgba(49, 136, 93, 0.58);
+  --accent-primary: #007ca8;
+  --accent-secondary: #7256a1;
+  --accent-warm: #bf4d24;
+  --accent-green: #31885d;
+  --text-primary: #141827;
+  --text-secondary: #46546a;
+  --text-muted: #657187;
+  --text-dim: #8a94a8;
+  --shadow-cyan: 0 14px 36px rgba(0, 124, 168, 0.14);
+  --shadow-warm: 0 14px 34px rgba(191, 77, 36, 0.14);
+  --selection-bg: rgba(0, 124, 168, 0.2);
+  --selection-text: #071019;
+  --control-bg: rgba(255, 255, 255, 0.82);
+  --control-hover-bg: rgba(0, 124, 168, 0.08);
+  --button-bg: rgba(0, 124, 168, 0.08);
+  --button-hover-bg: rgba(0, 124, 168, 0.13);
+  --button-hover-border: rgba(0, 124, 168, 0.72);
+  --button-warm-bg: rgba(191, 77, 36, 0.12);
+  --button-warm-hover-bg: rgba(191, 77, 36, 0.18);
+  --button-warm-border: rgba(191, 77, 36, 0.48);
+  --ghost-bg: rgba(255, 255, 255, 0.56);
+  --brand-mark-bg: rgba(0, 124, 168, 0.08);
+  --profile-border: rgba(0, 124, 168, 0.36);
+  --profile-shadow: 0 18px 46px rgba(0, 124, 168, 0.16);
+  --panel-bg: rgba(255, 255, 255, 0.74);
+  --contact-panel-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.84), rgba(235, 242, 250, 0.76));
+  --card-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(238, 244, 252, 0.78));
+  --card-shadow: 0 18px 48px rgba(27, 42, 70, 0.12);
+  --card-hover-shadow: 0 24px 66px rgba(0, 124, 168, 0.13);
+  --paper-venue-bg: rgba(0, 124, 168, 0.08);
+  --result-bg: rgba(191, 77, 36, 0.1);
+  --result-border: rgba(191, 77, 36, 0.24);
+  --result-text: #93401f;
+  --tag-bg: rgba(114, 86, 161, 0.1);
+  --tag-border: rgba(114, 86, 161, 0.2);
+  --tag-text: #5c4385;
+  --timeline-line: rgba(0, 124, 168, 0.18);
+  --timeline-dot-shadow: 0 0 0 6px rgba(0, 124, 168, 0.08);
+  --dot-pulse-start: rgba(0, 124, 168, 0.34);
+  --dot-pulse-end: rgba(0, 124, 168, 0);
+  --skill-track-bg: rgba(20, 24, 39, 0.08);
+  --contact-chip-bg: rgba(255, 255, 255, 0.58);
+  --contact-chip-hover-bg: rgba(0, 124, 168, 0.08);
+  --toast-bg: rgba(255, 255, 255, 0.94);
+  --mobile-nav-bg: radial-gradient(circle at 50% 10%, rgba(0, 124, 168, 0.12), transparent 32%), rgba(246, 248, 252, 0.96);
+  --ambient-bg: radial-gradient(ellipse at 50% 18%, rgba(0, 124, 168, 0.12), transparent 34%), radial-gradient(ellipse at 72% 72%, rgba(49, 136, 93, 0.08), transparent 32%), linear-gradient(180deg, rgba(246, 248, 252, 0.04) 0%, rgba(246, 248, 252, 0.62) 58%, var(--bg-void) 100%);
+  --ambient-soft-bg: radial-gradient(circle at 18% 22%, rgba(0, 124, 168, 0.08), transparent 28%), radial-gradient(circle at 82% 38%, rgba(191, 77, 36, 0.045), transparent 24%), radial-gradient(circle at 52% 82%, rgba(49, 136, 93, 0.055), transparent 26%);
+  --ambient-vignette-bg: linear-gradient(90deg, rgba(246, 248, 252, 0.78), transparent 16%, transparent 84%, rgba(246, 248, 252, 0.78)), linear-gradient(180deg, transparent 0%, rgba(246, 248, 252, 0.34) 48%, rgba(246, 248, 252, 0.88) 100%);
+  --ambient-shadow: inset 0 0 180px rgba(85, 103, 130, 0.18);
+  --theme-color: #f6f8fc;
+}
+
 body {
   overflow-x: hidden;
   background: var(--bg-void);
@@ -49,8 +163,8 @@ body {
 }
 
 ::selection {
-  background: rgba(0, 212, 255, 0.28);
-  color: #ffffff;
+  background: var(--selection-bg);
+  color: var(--selection-text);
 }
 
 :focus-visible {
