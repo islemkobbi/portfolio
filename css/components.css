@@ -6,7 +6,7 @@
   gap: 8px;
   border: 1px solid var(--border-active);
   border-radius: 6px;
-  background: rgba(0, 212, 255, 0.08);
+  background: var(--button-bg);
   color: var(--text-primary);
   padding: 10px 18px;
   font-weight: 700;
@@ -16,26 +16,26 @@
 
 .button:hover {
   transform: translateY(-2px);
-  border-color: rgba(80, 220, 255, 0.86);
-  background: rgba(0, 212, 255, 0.14);
+  border-color: var(--button-hover-border);
+  background: var(--button-hover-bg);
   box-shadow: var(--shadow-cyan);
 }
 
 .button--warm {
-  border-color: rgba(255, 107, 53, 0.64);
-  background: rgba(255, 107, 53, 0.14);
+  border-color: var(--button-warm-border);
+  background: var(--button-warm-bg);
   box-shadow: var(--shadow-warm);
 }
 
 .button--warm:hover {
   border-color: var(--accent-warm);
-  background: rgba(255, 107, 53, 0.22);
+  background: var(--button-warm-hover-bg);
 }
 
 .button--ghost {
   min-height: 38px;
   border-color: var(--border-dim);
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--ghost-bg);
   padding: 7px 12px;
   font-size: var(--t-sm);
 }
@@ -45,10 +45,10 @@
   aspect-ratio: 1;
   width: min(100%, 300px);
   overflow: hidden;
-  border: 1px solid rgba(0, 212, 255, 0.55);
+  border: 1px solid var(--profile-border);
   border-radius: 50%;
   background: var(--bg-surface);
-  box-shadow: 0 0 40px rgba(0, 212, 255, 0.22);
+  box-shadow: var(--profile-shadow);
 }
 
 .profile-frame img {
@@ -88,7 +88,7 @@
   min-width: 0;
   border: 1px solid var(--border-dim);
   border-radius: 8px;
-  background: rgba(8, 8, 24, 0.72);
+  background: var(--panel-bg);
   padding: 16px 12px;
 }
 
@@ -115,8 +115,8 @@
   position: relative;
   border: 1px solid var(--border-dim);
   border-radius: 8px;
-  background: linear-gradient(145deg, rgba(8, 8, 24, 0.88), rgba(16, 17, 37, 0.74));
-  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.22);
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
   transition: transform 220ms var(--ease-out), border-color 220ms var(--ease-out), box-shadow 220ms var(--ease-out);
 }
 
@@ -124,7 +124,7 @@
 .project-card:hover {
   transform: translateY(-4px);
   border-color: var(--border-active);
-  box-shadow: 0 24px 70px rgba(0, 212, 255, 0.12);
+  box-shadow: var(--card-hover-shadow);
 }
 
 .paper-card {
@@ -155,13 +155,13 @@
 
 .paper-venue {
   color: var(--accent-primary);
-  background: rgba(0, 212, 255, 0.08);
+  background: var(--paper-venue-bg);
 }
 
 .result-badge {
-  color: #ffcfbd;
-  background: rgba(255, 107, 53, 0.1);
-  border-color: rgba(255, 107, 53, 0.28);
+  color: var(--result-text);
+  background: var(--result-bg);
+  border-color: var(--result-border);
 }
 
 .paper-title,
@@ -202,10 +202,10 @@
   display: inline-flex;
   max-width: 100%;
   align-items: center;
-  border: 1px solid rgba(123, 94, 167, 0.36);
+  border: 1px solid var(--tag-border);
   border-radius: 999px;
-  background: rgba(123, 94, 167, 0.16);
-  color: #d8c8ff;
+  background: var(--tag-bg);
+  color: var(--tag-text);
   padding: 5px 9px;
   font-size: var(--t-xs);
   line-height: 1.25;
@@ -230,7 +230,7 @@
   bottom: 8px;
   left: 126px;
   width: 1px;
-  background: rgba(0, 212, 255, 0.22);
+  background: var(--timeline-line);
   content: "";
 }
 
@@ -250,7 +250,7 @@
   border: 2px solid var(--accent-primary);
   border-radius: 50%;
   background: var(--bg-void);
-  box-shadow: 0 0 0 6px rgba(0, 212, 255, 0.06);
+  box-shadow: var(--timeline-dot-shadow);
 }
 
 .timeline-range {
@@ -285,7 +285,7 @@
 .tool-panel {
   border: 1px solid var(--border-dim);
   border-radius: 8px;
-  background: rgba(8, 8, 24, 0.72);
+  background: var(--panel-bg);
   padding: clamp(20px, 4vw, 28px);
 }
 
@@ -324,7 +324,7 @@
   overflow: hidden;
   height: 9px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--skill-track-bg);
 }
 
 .skill-fill {
@@ -394,7 +394,7 @@
   justify-content: center;
   border: 1px solid var(--border-dim);
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.035);
+  background: var(--contact-chip-bg);
   color: var(--text-primary);
   padding: 10px 13px;
   line-height: 1.25;
@@ -404,7 +404,7 @@
 .contact-chip:hover {
   transform: translateY(-2px);
   border-color: var(--border-active);
-  background: rgba(0, 212, 255, 0.08);
+  background: var(--contact-chip-hover-bg);
 }
 
 .contact-note {
@@ -422,7 +422,7 @@
   transform: translateY(18px);
   border: 1px solid var(--border-active);
   border-radius: 8px;
-  background: rgba(8, 8, 24, 0.92);
+  background: var(--toast-bg);
   color: var(--text-primary);
   padding: 12px 14px;
   opacity: 0;

@@ -2,6 +2,9 @@ import { NeuralBg } from "./neural-bg.js";
 import { loadAllContent } from "./content-loader.js";
 import { initNav } from "./nav.js";
 import { initScrollReveal } from "./scroll-reveal.js";
+import { initTheme } from "./theme.js";
+
+initTheme();
 
 const canvas = document.getElementById("neural-bg");
 if (canvas) {

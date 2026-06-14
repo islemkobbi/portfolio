@@ -6,6 +6,29 @@
     <title>Islem KOBBI — Robotics & AI Engineer</title>
     <meta name="description" content="Robotics and AI engineer passionate about intelligent systems, reinforcement learning, and autonomous systems. Based in Paris, France.">
     <meta name="theme-color" content="#04040f">
+    <script>
+      (() => {
+        const storageKey = "portfolio-theme";
+        const root = document.documentElement;
+        const meta = document.querySelector('meta[name="theme-color"]');
+        const getStoredTheme = () => {
+          try {
+            const stored = localStorage.getItem(storageKey);
+            return stored === "light" || stored === "dark" ? stored : null;
+          } catch {
+            return null;
+          }
+        };
+        const stored = getStoredTheme();
+        const systemTheme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        const theme = stored || systemTheme;
+
+        root.dataset.theme = theme;
+        root.dataset.themeSource = stored ? "manual" : "system";
+        root.style.colorScheme = theme;
+        if (meta) meta.setAttribute("content", theme === "light" ? "#f6f8fc" : "#04040f");
+      })();
+    </script>
     <meta property="og:title" content="Islem KOBBI — Robotics & AI Engineer">
     <meta property="og:description" content="Robotics and AI engineer working on intelligent systems, deep learning, and autonomous agents.">
     <meta property="og:image" content="assets/img/og-preview.svg">
@@ -30,14 +53,9 @@
         <header class="site-header" data-site-header>
           <nav class="nav" aria-label="Main navigation">
             <a class="brand" href="#hero" aria-label="Go to top">
-              <span class="brand-mark">IK</span>
+              <!-- <span class="brand-mark">IK</span> -->
               <span class="brand-pulse" aria-hidden="true"></span>
             </a>
-            <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false" data-nav-toggle>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </button>
             <div class="nav-links" id="site-nav" data-nav-links>
               <a class="nav-link" href="#experience">Experience</a>
               <a class="nav-link" href="#skills">Skills</a>
@@ -46,6 +64,17 @@
               <a class="nav-link" href="#education">Education</a>
               <a class="nav-link" href="#training">Training</a>
               <a class="nav-link" href="#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+              <button class="theme-toggle" type="button" aria-label="Switch theme" title="Switch theme" data-theme-toggle>
+                <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true"></span>
+                <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true"></span>
+              </button>
+              <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false" data-nav-toggle>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </button>
             </div>
           </nav>
         </header>
