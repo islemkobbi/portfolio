@@ -1,9 +1,9 @@
 {
   "name": "Islem KOBBI",
-  "title": "AI & Robotics Engineer",
-  "institution": " INRIA Paris · Valeo anSWer · Sorbonne Université ",
-  "heroSubtitle": "AI & Robotics Engineer",
-  "bio": "PhD candidate in engineering sciences with expertise in robotics, AI, and control systems. Specialized in reinforcement learning, computer vision, and autonomous agent design. Experienced across simulation, prototyping, and real-world deployment.",
+  "title": "PhD Researcher – AI, Robotics & Autonomous Systems",
+  "institution": "INRIA Paris · Valeo anSWer · Sorbonne Université",
+  "heroSubtitle": "R&D Engineer in AI & Robotics",
+  "bio": "PhD candidate at INRIA Paris & Valeo anSWer. My research applies reinforcement learning to decision-making and motion planning for autonomous systems. I hold a dual engineering background in AI and Automation. My work covers the full R&D pipeline , from algorithm design and simulation to deployment on ground robots. I focus on bridging AI research with practical, scalable engineering.",
   "photo": "assets/img/cv_photo.png",
   "cv": "assets/docs/CV_KOBBI.pdf",
   "email": "islem.kobbi@outlook.com",
@@ -19,7 +19,7 @@
     {
       "value": 3,
       "suffix": "+",
-      "label": "Years Experience"
+      "label": "Experience"
     },
     {
       "value": 3,
@@ -28,6 +28,20 @@
     {
       "value": 3,
       "label": "Languages"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "level": "Native"
+    },
+    {
+      "name": "French",
+      "level": "Professional (C1)"
+    },
+    {
+      "name": "English",
+      "level": "Advanced (EFset C2)"
     }
   ]
 }

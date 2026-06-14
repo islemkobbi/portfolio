@@ -1,0 +1,21 @@
+{
+  "entries": [
+    {
+      "title": "Machine Learning Specialization",
+      "provider": "Coursera & DeepLearning.AI",
+      "range": "Online training",
+      "description": "Three-course specialization covering supervised learning, advanced learning algorithms, unsupervised learning, recommender systems, and reinforcement learning foundations.",
+      "topics": [
+        "Supervised ML",
+        "Neural Networks",
+        "Unsupervised Learning",
+        "Recommenders",
+        "Reinforcement Learning"
+      ],
+      "links": {
+        "certificate": "assets/docs/machine-learning-specialization.pdf",
+        "course": ""
+      }
+    }
+  ]
+}

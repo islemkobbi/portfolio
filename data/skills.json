@@ -9,12 +9,20 @@
       "level": 90
     },
     {
-      "name": "Deep Learning & CNNs",
-      "level": 88
+      "name": "Deep Learning ",
+      "level": 90
     },
     {
       "name": "Computer Vision",
-      "level": 85
+      "level": 80
+    },
+    {
+      "name": "Motion Planning & Control",
+      "level": 83
+    },
+    {
+      "name": "ROS / Robotics Simulation",
+      "level": 80
     }
   ],
   "categories": [
@@ -23,9 +31,19 @@
       "tags": [
         "PyTorch",
         "TensorFlow",
-        "Keras",
+        "Scikit-Learn",
         "NumPy",
-        "Pandas"
+        "Pandas",
+        "SciPy"
+      ]
+    },
+    {
+      "label": "Computer Vision",
+      "tags": [
+        "OpenCV",
+        "Pillow",
+        "YOLO",
+        "VLMs"
       ]
     },
     {
@@ -33,18 +51,42 @@
       "tags": [
         "ROS",
         "Gazebo",
-        "Docker",
-        "Linux"
+        "CARLA"
       ]
     },
     {
       "label": "Programming Languages",
       "tags": [
         "Python",
-        "C/C++",
-        "Java",
-        "Git"
+        "C / C++"
       ]
+    },
+    {
+      "label": "Tools & Infrastructure",
+      "tags": [
+        "Git",
+        "Docker",
+        "MATLAB / Simulink"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Machine Learning Specialization",
+      "issuer": "Coursera & DeepLearning.AI",
+      "topics": [
+        "Supervised ML: Regression & Classification",
+        "Advanced Learning Algorithms",
+        "Unsupervised Learning, Recommenders, Reinforcement Learning"
+      ]
+    },
+    {
+      "title": "TensorFlow for AI, ML & Deep Learning",
+      "issuer": "Coursera & DeepLearning.AI"
+    },
+    {
+      "title": "Introduction to Data Science",
+      "issuer": "Coursera & IBM"
     }
   ]
 }

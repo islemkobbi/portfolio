@@ -1,39 +1,58 @@
 {
   "entries": [
     {
-      "range": "Oct 2023 - Present",
-      "role": "PhD Student (Doctorant)",
-      "organization": "INRIA, Paris - Sorbonne Université",
-      "description": "Developing and testing reinforcement learning systems for decision-making and motion planning in autonomous driving. Focus on scalable self-play training, trajectory optimization, and simulation-based evaluation.",
+      "range": "Oct 2023 – Present",
+      "role": "PhD Researcher ",
+      "organization": "INRIA, Paris - Valeo anSWer - Sorbonne Université",
+      "description": "Designing and evaluating reinforcement learning systems for decision-making and motion planning in autonomous driving. Research focuses on scalable self-play training for multi-agent scenarios, trajectory optimization, and simulation-based evaluation. Work spans algorithm design, Python implementation, and benchmarking in realistic driving simulators.",
       "tags": [
         "Reinforcement Learning",
         "Motion Planning",
-        "Simulation",
-        "Python"
+        "Multi-Agent Systems",
+        "Autonomous Driving",
+        "Simulation"
       ]
     },
     {
-      "range": "Feb 2024 - Aug 2024",
-      "role": "R&D Deep Learning Engineer",
-      "organization": "Groupe Astek, Boulogne-Billancourt",
-      "description": "Built and tested multimodal deep learning systems for traffic sign reconstruction, detection, and recognition in autonomous driving pipelines. Worked on state-of-the-art CNN architectures for robust perception.",
+      "range": "Feb 2024 – Aug 2024",
+      "role": "R&D Deep Learning Engineer (Intern)",
+      "organization": "Astek Groupe ",
+      "description": "Built and evaluated multimodal deep learning pipelines for traffic sign reconstruction, detection, and recognition within an autonomous driving perception stack. Designed and benchmarked state-of-the-art architectures for robust real-world performance.",
       "tags": [
         "Deep Learning",
         "Computer Vision",
         "PyTorch",
-        "CNNs"
+        "CNNs",
+        "Perception",
+        "Autonomous Driving"
       ]
     },
     {
-      "range": "Jan 2023 - Jun 2023",
-      "role": "R&D AI/Control Engineer",
-      "organization": "LCP Laboratory, Algiers",
-      "description": "Optimized pose estimation techniques using reinforcement learning and deep learning for single and multi-agent systems. Implemented and tested on aerial and mobile robots with ROS and Gazebo simulation.",
+      "range": "Jan 2023 – Jun 2023",
+      "role": "R&D AI / Control Engineer (Intern)",
+      "organization": "LCP Laboratory (Laboratoire de Commande des Processus), Algiers",
+      "description": "Optimized pose estimation techniques using reinforcement learning and deep learning for single and multi-agent robotic systems. Implemented and validated algorithms on aerial (UAV) and mobile robots using ROS and Gazebo. Bridged control theory with modern deep RL methods.",
       "tags": [
         "Reinforcement Learning",
+        "Pose Estimation",
         "ROS",
-        "Robotics",
-        "Optimization"
+        "Gazebo",
+        "UAV",
+        "Multi-Agent",
+        "Robotics"
+      ]
+    },
+    {
+      "range": "Jun 2022 - Aug 2022",
+      "role": "Robotics Engineering Intern",
+      "organization": "Centre de Développement des Technologies Avancées (CDTA)",
+      "description": "Assembled and commissioned a Hexa-rotor drone platform. Gained hands-on experience with UAV hardware integration, embedded systems, and flight system bring-up.",
+      "tags": [
+        "UAV",
+        "Drone",
+        "Hardware",
+        "Embedded Systems",
+        "Robotics"
       ]
     }
   ]
