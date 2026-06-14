@@ -5,85 +5,45 @@
       "level": 92
     },
     {
-      "name": "PyTorch / Deep RL",
-      "level": 88
-    },
-    {
-      "name": "Self-Play Reinforcement Learning",
+      "name": "Reinforcement Learning",
       "level": 90
     },
     {
-      "name": "C / C++",
-      "level": 65
+      "name": "Deep Learning & CNNs",
+      "level": 88
     },
     {
-      "name": "CARLA / PufferDrive",
-      "level": 82
-    },
-    {
-      "name": "Computer Vision (OpenCV)",
-      "level": 80
+      "name": "Computer Vision",
+      "level": 85
     }
   ],
   "categories": [
     {
-      "label": "AI / ML",
+      "label": "AI / ML Frameworks",
       "tags": [
         "PyTorch",
-        "PPO",
-        "Self-Play RL",
-        "Transformer",
-        "LSTM",
-        "Keras",
         "TensorFlow",
-        "scikit-learn",
-        "XGBoost",
-        "OpenCV",
+        "Keras",
         "NumPy",
-        "Pandas",
-        "SciPy"
+        "Pandas"
       ]
     },
     {
-      "label": "Simulation & Robotics",
+      "label": "Robotics & Simulation",
       "tags": [
         "ROS",
         "Gazebo",
-        "CARLA",
-        "PufferDrive",
-        "Waymo OSA",
         "Docker",
         "Linux"
       ]
     },
     {
-      "label": "Languages",
+      "label": "Programming Languages",
       "tags": [
         "Python",
-        "C++",
+        "C/C++",
         "Java",
-        "JavaScript",
         "Git"
-      ]
-    },
-    {
-      "label": "Planning",
-      "tags": [
-        "Mid-to-Mid Planning",
-        "Hermite Splines",
-        "Trajectory Tracking",
-        "Closed-Loop Evaluation",
-        "Urban Driving"
-      ]
-    },
-    {
-      "label": "Web & Tools",
-      "tags": [
-        "Django",
-        "NodeJS",
-        "HTML/CSS",
-        "MATLAB",
-        "Blender"
       ]
     }
   ]

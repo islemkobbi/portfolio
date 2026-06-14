@@ -1,37 +1,33 @@
 {
   "name": "Islem KOBBI",
-  "title": "PhD Researcher | Mid-to-Mid Motion Planning | Self-Play RL",
-  "institution": "INRIA Paris - ASTRA Team",
-  "heroSubtitle": "Self-Play Reinforcement Learning for Autonomous Driving",
-  "bio": "I build mid-to-mid motion planners for autonomous vehicles, training policies through self-play reinforcement learning and validating them across closed maps, CARLA, PufferDrive, and Waymo-style urban scenarios.",
-  "photo": "assets/img/profile-placeholder.svg",
+  "title": "AI & Robotics Engineer",
+  "institution": " INRIA Paris · Valeo anSWer · Sorbonne Université ",
+  "heroSubtitle": "AI & Robotics Engineer",
+  "bio": "PhD candidate in engineering sciences with expertise in robotics, AI, and control systems. Specialized in reinforcement learning, computer vision, and autonomous agent design. Experienced across simulation, prototyping, and real-world deployment.",
+  "photo": "assets/img/cv_photo.png",
   "cv": "assets/docs/CV_KOBBI.pdf",
-  "email": "islem.kobbi@inria.fr",
-  "secondaryEmail": "islem.kobbi@outlook.com",
+  "email": "islem.kobbi@outlook.com",
+  "secondaryEmail": "islem.kobbi@inria.fr",
   "phone": "+33 07 58 94 16 98",
   "location": "Paris, France",
   "links": {
     "github": "https://github.com/islemkobbi",
     "linkedin": "https://www.linkedin.com/in/islem-kobbi/",
-    "scholar": ""
+    "scholar": "https://scholar.google.com/citations?user=pPdDFvsAAAAJ&hl"
   },
   "stats": [
     {
-      "value": 2,
-      "label": "Publications"
+      "value": 3,
+      "suffix": "+",
+      "label": "Years Experience"
     },
     {
       "value": 3,
-      "suffix": "+",
-      "label": "Years Research"
+      "label": "Degrees"
     },
     {
       "value": 3,
       "label": "Languages"
-    },
-    {
-      "value": 2,
-      "label": "Degrees"
     }
   ]
 }
