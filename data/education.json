@@ -1,36 +1,39 @@
 {
   "entries": [
     {
-      "range": "Oct 2023 - Present",
+      "range": "Oct 2024 - Present",
       "degree": "PhD in Engineering Sciences (Doctorat en Science de l'Ingénieur)",
       "school": "Sorbonne Université, Paris - INRIA",
-      "description": "Research in intelligent systems, reinforcement learning, and autonomous agent design.",
+      "description": "Research on reinforcement learning for decision-making and motion planning in autonomous driving. Topics include scalable multi-agent self-play, trajectory optimization, and sim-to-real transfer. Affiliated with the INRIA ASTRA research team.",
       "tags": [
         "PhD",
-        "AI",
-        "Robotics"
+        "Reinforcement Learning",
+        "Autonomous Driving",
+        "INRIA"
       ]
     },
     {
       "range": "Sep 2023 - Sep 2024",
       "degree": "M2 Ingénierie des Systèmes Intelligents",
       "school": "Sorbonne Université, Paris",
-      "description": "Excellence Scholar. Modules: Advanced Machine Learning, Image & Signal Processing, Human-Machine Interaction AI, Robotics AI.",
+      "description": "Excellence Scholar (Boursier d'excellence). Core modules: Advanced Machine Learning, Advanced Image & Signal Processing, AI for Human-Machine Interaction, AI for Robotics.",
       "tags": [
         "Master's",
         "AI",
-        "ML"
+        "ML",
+        "Excellence Scholar"
       ]
     },
     {
       "range": "Sep 2018 - Jun 2023",
-      "degree": "M2 + Engineering Degree in Automation (Ingénieur d'État)",
+      "degree": "M2 + State Engineering Degree in Automation (Ingénieur d'État)",
       "school": "Polytechnique Alger, Algeria",
-      "description": "Advanced Control, Robotics, Optimal Control, Industrial Computing, Nonlinear Systems, Power Electronics.",
+      "description": "5-year engineering program. Key modules: Advanced Control, Robotics, Optimal Control, Industrial Computing, Nonlinear Systems, Power Electronics. Strong foundation bridging control theory and AI.",
       "tags": [
         "Engineering",
-        "Control",
-        "Robotics"
+        "Control Systems",
+        "Robotics",
+        "Optimization"
       ]
     }
   ]

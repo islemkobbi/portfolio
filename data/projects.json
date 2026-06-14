@@ -2,13 +2,15 @@
   "projects": [
     {
       "id": "sentiment-detection",
-      "title": "Sentiment Detection via Vision",
-      "summary": "Enhanced sentiment detection by analyzing pixel-level contributions and guiding CNN training to focus on facial regions.",
-      "details": "Developed attention mechanisms to improve CNN focus on crucial facial areas, achieving better accuracy on sentiment classification tasks.",
+      "title": "Sentiment Detection via Vision: A Novel Approach",
+      "summary": "Improved facial sentiment classification by developing attention-guided CNN training that focuses on pixel-level facial contributions.",
+      "details": "Designed attention mechanisms to analyze per-pixel contributions to sentiment predictions, guiding the CNN to concentrate on semantically relevant facial regions during training. Achieved measurable improvements in classification accuracy over standard baselines. Highlights the intersection of explainability and performance in deep learning.",
       "tags": [
         "Deep Learning",
         "Computer Vision",
-        "CNNs"
+        "CNNs",
+        "Explainability",
+        "Attention Mechanisms"
       ],
       "links": {
         "repo": "",
@@ -18,13 +20,15 @@
     },
     {
       "id": "predictive-modeling",
-      "title": "Predictive Modeling with Neural Networks",
-      "summary": "Built predictive models for purchase prediction, delay forecasting, and demand estimation in restaurants.",
-      "details": "Achieved top performance in multiple data science competitions using advanced deep learning and regression techniques. Models deployed for business intelligence.",
+      "title": "Predictive Modeling with Deep Neural Networks & Regression",
+      "summary": "Built high-accuracy predictive models for purchase prediction, delay forecasting, demand estimation, and loan propensity — ranking 1st in multiple data science competitions.",
+      "details": "Applied advanced deep learning and regression techniques to real-world tabular data problems across multiple domains (retail, logistics, restaurant demand). Achieved top-1 accuracy in several competitions, demonstrating strong applied ML research skills. Models were designed for business intelligence deployment.",
       "tags": [
         "Neural Networks",
         "Regression",
-        "Data Science"
+        "Data Science",
+        "Applied ML",
+        "Competitions"
       ],
       "links": {
         "repo": "",
@@ -34,13 +38,15 @@
     },
     {
       "id": "multi-task-robot",
-      "title": "Multi-Task Mobile Robot",
-      "summary": "Designed and built a robot capable of maze solving, object manipulation, and sorting by vision.",
-      "details": "Integrated perception, planning, and control systems. Used computer vision for real-time shape and color recognition with autonomous navigation.",
+      "title": "Multi-Task Autonomous Mobile Robot",
+      "summary": "Designed and built a fully integrated robot capable of autonomous maze navigation, object manipulation, and vision-based sorting.",
+      "details": "End-to-end robotics project integrating perception, planning, and control. Used real-time computer vision for shape and color recognition to enable autonomous object sorting. The robot autonomously navigated mazes and performed pick-and-place tasks, demonstrating strong system integration from sensor input to actuation.",
       "tags": [
         "Robotics",
         "Computer Vision",
-        "Control"
+        "Autonomous Navigation",
+        "Control Systems",
+        "System Integration"
       ],
       "links": {
         "repo": "",

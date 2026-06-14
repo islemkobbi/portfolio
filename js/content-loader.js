@@ -4,23 +4,26 @@ const DATA_FILES = {
   experience: "data/experience.json",
   education: "data/education.json",
   projects: "data/projects.json",
-  skills: "data/skills.json"
+  skills: "data/skills.json",
+  training: "data/training.json"
 };
 
 export async function loadAllContent() {
-  const [profile, publications, experience, education, projects, skills] = await Promise.all([
+  const [profile, publications, experience, education, projects, skills, training] = await Promise.all([
     fetchJson(DATA_FILES.profile),
     fetchJson(DATA_FILES.publications),
     fetchJson(DATA_FILES.experience),
     fetchJson(DATA_FILES.education),
     fetchJson(DATA_FILES.projects),
-    fetchJson(DATA_FILES.skills)
+    fetchJson(DATA_FILES.skills),
+    fetchOptionalJson(DATA_FILES.training)
   ]);
 
   renderHero(profile);
   renderProfile(profile);
   renderExperience(experience);
   renderSkills(skills);
+  renderTraining(training || { entries: skills.certifications || [] });
   renderProjects(projects);
   renderPublications(publications);
   renderEducation(education);
@@ -28,7 +31,7 @@ export async function loadAllContent() {
   bindCopyActions();
 
   document.dispatchEvent(new CustomEvent("portfolio:content-loaded"));
-  return { profile, publications, experience, education, projects, skills };
+  return { profile, publications, experience, education, projects, skills, training };
 }
 
 async function fetchJson(path) {
@@ -36,6 +39,12 @@ async function fetchJson(path) {
   if (!response.ok) {
     throw new Error(`Could not load ${path}: ${response.status}`);
   }
+  return response.json();
+}
+
+async function fetchOptionalJson(path) {
+  const response = await fetch(path, { cache: "no-cache" });
+  if (!response.ok) return null;
   return response.json();
 }
 
@@ -208,6 +217,42 @@ function renderSkills(data) {
   });
   toolPanel.append(categoryList);
   grid.append(skillPanel, toolPanel);
+  container.append(grid);
+}
+
+function renderTraining(data) {
+  const container = byId("training-container");
+  if (!container) return;
+  container.replaceChildren();
+
+  const entries = data.entries || [];
+  if (!entries.length) {
+    container.append(empty("No training entries yet."));
+    return;
+  }
+
+  const grid = element("div", "card-grid");
+  entries.forEach((entry) => {
+    const card = element("article", "project-card reveal");
+    const glyph = element("span", "project-glyph", "*");
+    glyph.setAttribute("aria-hidden", "true");
+
+    const provider = entry.provider || entry.issuer || "Training";
+    const range = entry.range || "Online";
+    const title = element("h3", "project-title", entry.title);
+    const summary = element("p", "project-summary", entry.description || `${provider} | ${range}`);
+    const tags = tagList([provider, range, ...(entry.topics || entry.tags || [])].filter(Boolean));
+
+    const actions = element("div", "project-actions");
+    const links = entry.links || {};
+    addLinkAction(actions, "Certificate", links.certificate);
+    addLinkAction(actions, "Course", links.course);
+
+    card.append(glyph, title, summary, tags);
+    if (actions.childElementCount) card.append(actions);
+    grid.append(card);
+  });
+
   container.append(grid);
 }
 

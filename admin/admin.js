@@ -3,6 +3,7 @@ const SECTIONS = {
   papers: { label: "Papers", file: "publications.json", collection: "papers", type: "paper" },
   experience: { label: "Experience", file: "experience.json", collection: "entries", type: "experience" },
   education: { label: "Education", file: "education.json", collection: "entries", type: "education" },
+  training: { label: "Training", file: "training.json", collection: "entries", type: "training" },
   projects: { label: "Projects", file: "projects.json", collection: "projects", type: "project" },
   skills: { label: "Skills", file: "skills.json", type: "skills" }
 };
@@ -158,6 +159,7 @@ function render() {
   if (config.type === "paper") renderPaperForm(getSelectedItem(config, data));
   if (config.type === "experience") renderExperienceForm(getSelectedItem(config, data));
   if (config.type === "education") renderEducationForm(getSelectedItem(config, data));
+  if (config.type === "training") renderTrainingForm(getSelectedItem(config, data));
   if (config.type === "project") renderProjectForm(getSelectedItem(config, data));
   if (config.type === "skills") renderSkillsForm(data);
 }
@@ -298,6 +300,23 @@ function renderEducationForm(entry) {
     field("School", entry, "school"),
     csvField("Tags", entry, "tags"),
     field("Description", entry, "description", "textarea", "field-full")
+  );
+  ui.form.append(grid);
+}
+
+function renderTrainingForm(entry) {
+  if (!entry) return ui.form.append(emptyMessage("Add a training entry to begin."));
+  entry.topics = entry.topics || [];
+  entry.links = entry.links || { certificate: "", course: "" };
+  const grid = formGrid();
+  grid.append(
+    field("Title", entry, "title"),
+    field("Provider", entry, "provider"),
+    field("Date or format", entry, "range"),
+    csvField("Topics", entry, "topics", "field-full"),
+    field("Description", entry, "description", "textarea", "field-full"),
+    field("Certificate link", entry.links, "certificate"),
+    field("Course link", entry.links, "course")
   );
   ui.form.append(grid);
 }
@@ -460,6 +479,14 @@ function createItem(type) {
       description: "",
       tags: []
     },
+    training: {
+      title: "New training",
+      provider: "Provider",
+      range: "Online",
+      description: "",
+      topics: [],
+      links: { certificate: "", course: "" }
+    },
     project: {
       id: "new-project",
       title: "New project",
@@ -534,6 +561,7 @@ function itemTitle(item, type) {
   if (type === "paper") return item.title;
   if (type === "experience") return item.role;
   if (type === "education") return item.degree;
+  if (type === "training") return item.title;
   if (type === "project") return item.title;
   return "Item";
 }
