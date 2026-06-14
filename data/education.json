@@ -1,25 +1,36 @@
 {
   "entries": [
     {
-      "range": "2023 - Present",
-      "degree": "PhD in Autonomous Driving and Reinforcement Learning",
-      "school": "INRIA Paris - ASTRA Team",
-      "description": "Doctoral research on reinforcement learning, motion planning, and scalable self-play for autonomous vehicles.",
+      "range": "Oct 2023 - Present",
+      "degree": "PhD in Engineering Sciences (Doctorat en Science de l'Ingénieur)",
+      "school": "Sorbonne Université, Paris - INRIA",
+      "description": "Research in intelligent systems, reinforcement learning, and autonomous agent design.",
       "tags": [
         "PhD",
-        "Reinforcement Learning",
-        "Autonomous Driving"
+        "AI",
+        "Robotics"
       ]
     },
     {
-      "range": "Before 2023",
-      "degree": "Graduate Studies in AI, Robotics, and Computer Science",
-      "school": "Engineering and research training",
-      "description": "Foundation in machine learning, computer vision, software engineering, and robotic systems.",
+      "range": "Sep 2023 - Sep 2024",
+      "degree": "M2 Ingénierie des Systèmes Intelligents",
+      "school": "Sorbonne Université, Paris",
+      "description": "Excellence Scholar. Modules: Advanced Machine Learning, Image & Signal Processing, Human-Machine Interaction AI, Robotics AI.",
       "tags": [
+        "Master's",
         "AI",
-        "Robotics",
-        "Computer Science"
+        "ML"
+      ]
+    },
+    {
+      "range": "Sep 2018 - Jun 2023",
+      "degree": "M2 + Engineering Degree in Automation (Ingénieur d'État)",
+      "school": "Polytechnique Alger, Algeria",
+      "description": "Advanced Control, Robotics, Optimal Control, Industrial Computing, Nonlinear Systems, Power Electronics.",
+      "tags": [
+        "Engineering",
+        "Control",
+        "Robotics"
       ]
     }
   ]

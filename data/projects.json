@@ -1,82 +1,50 @@
 {
   "projects": [
     {
-      "id": "selfplan",
-      "title": "Closed-Map Self-Play Planner",
-      "summary": "A mid-to-mid RL planner trained through closed-map self-play and evaluated on CARLA and Waymo-style metrics.",
-      "details": "SelfPlan learns short-horizon trajectory outputs that are tracked by a low-level controller. The policy uses structured ego-frame observations and a reward balancing path quality, efficiency, safety, and goal reaching. In the extracted manuscript, the CARLA protocol reports 97% success, 2% collision rate, and 1% off-road rate.",
+      "id": "sentiment-detection",
+      "title": "Sentiment Detection via Vision",
+      "summary": "Enhanced sentiment detection by analyzing pixel-level contributions and guiding CNN training to focus on facial regions.",
+      "details": "Developed attention mechanisms to improve CNN focus on crucial facial areas, achieving better accuracy on sentiment classification tasks.",
       "tags": [
-        "Self-Play RL",
-        "CARLA",
-        "Waymo OSA",
-        "Motion Planning"
+        "Deep Learning",
+        "Computer Vision",
+        "CNNs"
       ],
       "links": {
         "repo": "",
-        "paper": "assets/docs/selfplan-closed-map-self-play.pdf",
+        "paper": "",
         "demo": ""
       }
     },
     {
-      "id": "urban-self-play-planner",
-      "title": "Urban Self-Play Motion Planner",
-      "summary": "A GPU-trained planner that outputs Hermite-spline trajectories for dense urban multi-agent scenarios.",
-      "details": "This project compares MLP, recurrent, transformer, and transformer-LSTM policies trained with PPO in PufferDrive. The strongest policy reaches 92.2% task completion with a 6.9% collision rate on 150 unseen urban maps, while recurrent memory sustains the best performance and efficiency trade-off at roughly 340k environment steps per second.",
+      "id": "predictive-modeling",
+      "title": "Predictive Modeling with Neural Networks",
+      "summary": "Built predictive models for purchase prediction, delay forecasting, and demand estimation in restaurants.",
+      "details": "Achieved top performance in multiple data science competitions using advanced deep learning and regression techniques. Models deployed for business intelligence.",
       "tags": [
-        "PufferDrive",
-        "PPO",
-        "LSTM",
-        "Transformer"
+        "Neural Networks",
+        "Regression",
+        "Data Science"
       ],
       "links": {
         "repo": "",
-        "paper": "assets/docs/motion-planning-self-play-itsc26.pdf",
+        "paper": "",
         "demo": ""
       }
     },
     {
-      "id": "vision-sentiment",
-      "title": "Vision Sentiment Detection",
-      "summary": "Improved emotion detection by guiding CNN attention toward relevant facial regions.",
-      "details": "A computer-vision project focused on facial sentiment recognition, attention guidance, and interpretable feature emphasis in deep neural networks.",
+      "id": "multi-task-robot",
+      "title": "Multi-Task Mobile Robot",
+      "summary": "Designed and built a robot capable of maze solving, object manipulation, and sorting by vision.",
+      "details": "Integrated perception, planning, and control systems. Used computer vision for real-time shape and color recognition with autonomous navigation.",
       "tags": [
-        "CNN",
-        "Vision",
-        "Deep Learning"
+        "Robotics",
+        "Computer Vision",
+        "Control"
       ],
       "links": {
         "repo": "",
-        "demo": ""
-      }
-    },
-    {
-      "id": "traffic-signs",
-      "title": "Traffic Sign Reconstruction",
-      "summary": "A multimodal pipeline for detecting, reconstructing, and recognizing traffic signs.",
-      "details": "Designed for autonomous-driving perception research, this prototype links reconstruction and recognition tasks to recover clearer traffic-sign evidence under imperfect visual conditions.",
-      "tags": [
-        "PyTorch",
-        "OpenCV",
-        "Perception"
-      ],
-      "links": {
-        "repo": "",
-        "demo": ""
-      }
-    },
-    {
-      "id": "robotics-stack",
-      "title": "Simulation Evaluation Stack",
-      "summary": "Experiment tooling for repeatable autonomous-driving policy evaluation across simulators and metrics.",
-      "details": "A research workflow for running repeatable motion-planning experiments, packaging dependencies, and comparing policy behavior across CARLA, PufferDrive, and Waymo-style validation scenarios.",
-      "tags": [
-        "CARLA",
-        "PufferDrive",
-        "Docker",
-        "Simulation"
-      ],
-      "links": {
-        "repo": "",
+        "paper": "",
         "demo": ""
       }
     }

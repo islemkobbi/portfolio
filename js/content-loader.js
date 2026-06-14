@@ -19,10 +19,10 @@ export async function loadAllContent() {
 
   renderHero(profile);
   renderProfile(profile);
-  renderPublications(publications);
   renderExperience(experience);
   renderSkills(skills);
   renderProjects(projects);
+  renderPublications(publications);
   renderEducation(education);
   renderContact(profile);
   bindCopyActions();
@@ -251,8 +251,8 @@ function renderContact(profile) {
 
   const panel = element("section", "contact-panel reveal");
   panel.append(
-    element("h2", "contact-title", "Let's talk research."),
-    element("p", "contact-copy", "For research conversations, industry roles, or collaborations, these are the fastest ways to reach me.")
+    element("h2", "contact-title", "Let's connect."),
+    element("p", "contact-copy", "Open to collaboration, projects, and engineering opportunities. Fastest ways to reach me.")
   );
 
   const emails = element("div", "contact-grid");
